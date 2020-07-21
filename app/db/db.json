@@ -1,3 +1,16 @@
 {
-
+  "email": {
+    "signs": [
+      {
+        "name": "Nikita Ukrazhenko",
+        "position": "Business Development Manager, OZiTAG",
+        "image": "https://i.ibb.co/yf15YCb/Me.png",
+        "email": "n.ukrazhenko@ozitag.com",
+        "email-url": "n.ukrazhenko@ozitag.com",
+        "li-url": "#",
+        "clutch-url": "#",
+        "inst-url": "#"
+      }
+    ]
+  }
 }

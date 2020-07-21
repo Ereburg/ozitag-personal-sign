@@ -1,0 +1,204 @@
+{{#each email.signs}}
+
+  <hr>
+  <h1 style="text-align: center">{{this.name}}</h1>
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+         style="background:#ffffff;background-color:#ffffff;width:100%;">
+    <tbody>
+    <tr>
+      <td style="direction:ltr;font-size:0px;padding:20px 0px 45px;text-align:left;">
+        <!--[if mso | IE]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="" style="vertical-align:top;width:143.52px;">
+        <![endif]-->
+
+        <div class="mj-column-per-26 mj-outlook-group-fix"
+             style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:16%;min-width:68px;max-width: 81px;margin-left: 0;">
+
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0;vertical-align:top;"
+                 width="100%">
+
+            <!-- IMAGE-->
+            <tr>
+              <td align="left" style="font-size:0px;padding:0 12px 12px 0;word-break:break-word;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                       style="margin: 0;border-collapse:collapse;border-spacing:0px;">
+                  <tbody>
+                  <tr>
+                    <td style="width:68px;">
+                      <img alt="{{ this.name }}"
+                           height="auto"
+                           src="{{ this.image }}"
+                           style="border:0;border-radius: 50%;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;"
+                           width="119"/>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <!--[if mso | IE]>
+        </td>
+
+        <td class="" style="vertical-align:top;width:408.48px;">
+        <![endif]-->
+
+        <div class="mj-column-per-74 mj-outlook-group-fix"
+             style="border-left: 1px solid #252c32;padding: 1px 0 1px 12px;font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:69%;">
+
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top; margin: 0;"
+                 width="100%">
+            <!-- NAME -->
+            <tr>
+              <td align="left"
+                  style="line-height: 1;word-break:break-word; font-size: 12px;font-weight: bold;font-style: normal;margin:0;padding: 0;">
+                <span style="display:inline-block;min-height: 14px;color: #252c32">{{ this.name }}</span>
+              </td>
+            </tr>
+
+            <!-- POSITION -->
+            <tr>
+              <td align="left"
+                  style="line-height: 1;padding: 4px 0 8px;word-break:break-word;font-size: 12px;">
+                <span style="display:inline-block;min-height: 14px;color: #252c32">{{ this.position }}</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" style="font-size:0px;padding:0 0 12px;word-break:break-word;">
+                <table cellpadding="0" cellspacing="0" width="100%" border="0"
+                       style=" margin: 0;color:#252c32;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;">
+                  <!--  EMAIL -->
+                  {{#if this.email}}
+                    <tr style="vertical-align: middle; text-align: left;">
+                      <td style="padding: 0 0 8px; width: 14px;line-height: 0;">
+                        <img src="https://f.hubspotusercontent10.net/hubfs/4992313/2020_EMAIL/images/personal_sign/email.png"
+                             style="width: 14px; height: 12px;"/>
+                      </td>
+                      <td style="padding: 0 9px 8px;line-height: 0;">
+                        <a href="mailto:{{ this.email-url }}"
+                           style="display: inline-block;min-height: 14px; line-height: 1;font-size: 12px; color: #252c32; text-decoration: underline;">{{ this.email }}</a>
+                      </td>
+                    </tr>
+                  {{/if}}
+
+                  <!--  PHONE -->
+                  {{#if this.tel}}
+                    <tr style="vertical-align: middle;">
+                      <td style="padding: 0; width: 14px;line-height: 0;">
+                        <img src="https://f.hubspotusercontent10.net/hubfs/4992313/2020_EMAIL/images/personal_sign/phone.png"
+                             style="width: 14px; height: 14px;"/>
+                      </td>
+                      <td style="padding: 0 9px 0px;line-height: 0;">
+                        <a href="tel:{{ this.tel-url }}"
+                           style="display: inline-block;min-height: 14px; line-height: 1;font-size: 12px; color: #252c32; text-decoration: none;">{{ this.tel }}</a>
+                      </td>
+                    </tr>
+                  {{/if}}
+
+                  <!--  Company -->
+                  <tr style="vertical-align: middle;">
+                    <td style="padding: 0; width: 14px;line-height: 0;">
+                      <img src="../assets/images/website.png"
+                           style="width: 14px; height: 14px;"/>
+                    </td>
+                    <td style="padding: 0 9px 0px;line-height: 0;">
+                      <a href="https://ozitag.com/"
+                         style="display: inline-block;min-height: 14px;line-height: 1;font-size: 12px;color: #252c32;text-decoration: none;">OZiTAG.com</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!--  BUTTON -->
+            <tr>
+              <td align="left" style="font-size:0px;padding: 0;word-break:break-word;">
+                <table cellpadding="0" cellspacing="0" width="100%" align="center" border="0"
+                       style="max-width: 100px;margin: 0;vertical-align: middle;color:#252c32;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;">
+                  <tr style="vertical-align: middle; text-align: left;">
+                    {{#if this.clutch-url }}
+                      <td style="width: 20px;padding-right: 12px;line-height:0;text-align:left;color:#252c32;">
+                        <a href="{{ this.clutch-url }}"
+                           style="display: inline-block;line-height:1;width: 20px;height: 20px;text-decoration: none;"
+                           target="_blank">
+                          <img width="20" style="object-fit: contain;width:20px;"
+                               src="../assets/images/clutch.png"/>
+                        </a>
+                      </td>
+                    {{/if}}
+                    {{#if this.inst-url }}
+                      <td style="width: 20px;padding-right: 12px;line-height:0;text-align:left;color:#252c32;">
+                        <a href="{{ this.inst-url }}"
+                           style="display: inline-block;line-height:1;width: 20px;height: 20px;text-decoration: none;"
+                           target="_blank">
+                          <img width="20" style="object-fit: contain;width:20px;"
+                               src="../assets/images/instagram.png"/>
+                        </a>
+                      </td>
+                    {{/if}}
+                    {{#if this.li-url }}
+                      <td style="width: 20px;padding-right: 12px;line-height:0;text-align:left;color:#252c32;">
+                        <a href="{{ this.li-url }}"
+                           style="display: inline-block;line-height:1;width: 20px;height: 20px;text-decoration: none;"
+                           target="_blank">
+                          <img width="20" style="object-fit: contain;width:20px;"
+                               src="../assets/images/linkedin.png"/>
+                        </a>
+                      </td>
+                    {{/if}}
+                    {{#if this.fb-url }}
+                      <td style="width: 20px;padding-right: 12px;font-size:13px;line-height:0;text-align:left;color:#252c32;">
+                        <a href="{{ this.fb-url }}"
+                           style="display: inline-block;width: 20px;height: 20px;text-decoration: none;"
+                           target="_blank">
+                          <img width="20" style="width:20px;"
+                               src="https://f.hubspotusercontent10.net/hubfs/4992313/2020_EMAIL/images/personal_sign/facebook.png"/>
+                        </a>
+                      </td>
+                    {{/if}}
+                    {{#if this.tw-url }}
+                      <td style="width: 20px;padding-right: 12px;font-size:13px;line-height:0;text-align:left;color:#252c32;">
+                        <a href="{{ this.tw-url }}"
+                           style="display: inline-block;width: 20px;height: 20px;text-decoration: none;"
+                           target="_blank">
+                          <img width="20" style="width:20px;"
+                               src="https://f.hubspotusercontent10.net/hubfs/4992313/2020_EMAIL/images/personal_sign/twitter.png"/>
+                        </a>
+                      </td>
+                    {{/if}}
+                    {{#if this.btn-url }}
+                      <td style="padding-left: 0.5px;font-size:13px;line-height:1;text-align:left;color:#252c32;">
+                        <a href="{{ this.btn-url }}"
+                           style="display:inline-block;color:#252c32;font-size:12px;font-weight:700;line-height:normal;text-decoration:underline;text-align:center;padding:0;mso-padding-alt:0px;border-radius:unset;border:none;"
+                           target="_blank">Book a Meeting</a>
+                      </td>
+                    {{/if}}
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!--[if mso | IE]>
+        </td>
+
+        </tr>
+
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <hr>
+{{/each}}
